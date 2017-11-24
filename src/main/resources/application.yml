@@ -1,0 +1,10 @@
+server:
+  port: 9000
+zuul:
+  routes:
+    api-1:
+      path: /user/**
+      url: http://localhost:8081/
+    api-2:
+      path: /club/**
+      url: http://localhost:8082/
